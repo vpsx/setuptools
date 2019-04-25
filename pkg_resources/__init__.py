@@ -290,7 +290,7 @@ class VersionConflict(ResolutionError):
 class ContextualVersionConflict(VersionConflict):
     """
     A VersionConflict that accepts a third parameter, the set of the
-    requirements that required the installed Distribution.
+    requirements that required the conflicting Distribution.
     """
 
     _template = VersionConflict._template + ' by {self.required_by}'
